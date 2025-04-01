@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>register</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrate</title>
+  <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
+ 
+  <main>
+    <section class="seccion">
+      <h1>Register</h1>
+      <form action="./login.html" method="GET">
+        <label class="form">
+          Nombre
+          <input type="text" name="nombre" required>
+        </label>
     
+        <label class="form">
+          Email
+          <input type="email" name="email" required>
+        </label>
+        
+        <label class="form">
+          Contraseña
+          <input type="password" name="password">
+        </label>
+        
+      
+        <label class="form">
+          <input type="checkbox" name="terminos" required> Términos y condiciones </label>
+        
+         
+
+       <div class="form">
+        <button type="submit">Enviar</button> 
+        <button type="reset">Resetear</button>
+       </div>
+
+       <div class="yatengocuenta">
+        <a href="./login.html">Ya tengo cuenta</a> </div>
+       
+      </form>
+    </section>
+  </main>
+  
+ 
+  
 </body>
 </html>
