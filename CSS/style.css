@@ -148,8 +148,8 @@ header li {
 }
 
 .elemento img {
-    width: 250px;
-    height: 400px;
+    width: 240px;
+    height: 300px;
     display: block;
     border-radius: 10px;
 }
@@ -160,6 +160,10 @@ header li {
     color: white;
 }
 
+.titulo{
+    width: 240px;
+    height: 10px;
+}
 
 .detalles h3 {
     font-size: 25px;
