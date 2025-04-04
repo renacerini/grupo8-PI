@@ -148,8 +148,7 @@ header li {
 }
 
 .elemento img {
-    width: 240px;
-    height: 300px;
+    width: 250px;
     display: block;
     border-radius: 10px;
 }
@@ -160,11 +159,9 @@ header li {
     color: white;
 }
 
-.titulo{
-    width: 240px;
-    height: 10px;
+a{
+    text-decoration: none;
 }
-
 .detalles h3 {
     font-size: 25px;
     padding: 3px;
@@ -192,11 +189,7 @@ header li {
     margin: 100px 0 0 0;
 }
 
-.banner{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
+
 
 
 .banner img {
@@ -226,6 +219,7 @@ header li {
    margin: auto;
     margin-top: 75px;
     margin-bottom: 130px;
+    height: 80vh;
    
 }
 h1 {
@@ -280,3 +274,4 @@ h1 {
     color: #007bff;
     text-decoration: none;
 }
+
