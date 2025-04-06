@@ -356,3 +356,102 @@ h1 {
     margin: 70px 0px;
 }
 
+@media (max-width: 1024px) {
+    /* para tablet */
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header li {
+        padding: 10px 0;
+    }
+
+    .buscador {
+        margin-top: 10px;
+    }
+
+    .elementos {
+        justify-content: center;
+    }
+
+    .elemento {
+        width: 45%;
+        margin: 10px;
+    }
+
+    #footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .linea {
+        width: 100%;
+        height: 1px;
+        margin: 20px 0;
+    }
+
+
+    .maindetalle {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fotodetalle {
+        width: 100%;
+       
+    }
+}
+
+
+@media (max-width: 768px) {
+    /* para celular */
+    .elemento {
+        width: 90%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header li {
+        padding: 10px 0;
+    }
+
+    .buscador {
+        margin-top: 10px;
+    }
+
+    #footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .linea {
+        width: 100%;
+        height: 1px;
+        margin: 20px 0;
+    }
+
+
+    .maindetalle {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fotodetalle {
+        width: 100%;
+     
+    }
+}
