@@ -356,3 +356,50 @@ h1 {
     margin: 70px 0px;
 }
 
+
+
+
+
+
+
+/* CSS GENERO PELICULA */
+
+.genero-container {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background-color:  rgb(37, 37, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    flex-direction: column;
+  }
+  
+  .genero-title {
+    margin-bottom: 40px;
+    color: #fcfcfc;
+    font-size: 32px;
+  }
+  
+  .genero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .genero-btn {
+    text-decoration: none;
+    background-color: #6c757d;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .genero-btn:hover {
+    background-color: rgba(255, 2, 2, 0.514);
+  }
+  
