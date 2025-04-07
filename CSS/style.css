@@ -163,9 +163,7 @@ header li {
     border-radius: 10px;
 }
 
-.elemento img:hover {
-    background-color: rgba(144, 144, 144, 0.125);
-}
+
 
 .detalles {
     text-align: center;
@@ -225,7 +223,6 @@ a {
 
 /* CSS del register y login */ 
 
-
 .seccionreg {
     background: white;
     padding: 60px;
@@ -233,6 +230,7 @@ a {
     margin: auto;
     margin-top: 35px;
     margin-bottom: 40px;
+    border-radius: 5px;
 }
 
 .seccionreg h1{
@@ -250,7 +248,7 @@ a {
     margin: auto;
     margin-top: 150px;
     margin-bottom: 150px;
-   
+   border-radius: 5px;
 }
 
 h1 {
@@ -270,6 +268,7 @@ h1 {
     display: block;
     width: 100%;
     margin-top: 5px;
+    border-radius: 3px;
 }
 
 .botonlog {
@@ -280,16 +279,29 @@ h1 {
     font-size: 16px;
     width: 100%;
     margin-bottom: 5px;
+
+}
+
+.botonlog:hover{
+    background-color: #00356d;
+
 }
 
 .botonlog[type="reset"] {
     background-color: #6c757d;
 }
 
+.botonlog[type="reset"]:hover {
+    background-color: #7c0000;
+}
+
 .yatengocuenta {
     margin-top: 10px;
 }
 
+.yatengocuenta:hover{
+font-weight: bolder;
+}
 .yatengocuenta a {
     color: #007bff;
     text-decoration: none;
@@ -299,10 +311,14 @@ h1 {
     margin-top: 10px;
 }
 
+.notengocuenta:hover{
+    font-weight: bolder;
+    }
 .notengocuenta a {
     color: #007bff;
     text-decoration: none;
 }
+
 
 .maindetalle {
     display: flex;
@@ -455,11 +471,6 @@ h1 {
     }
 }
 
-
-
-
-
-
 /* CSS GENERO PELICULA */
 
 .genero-container {
@@ -495,6 +506,7 @@ h1 {
     font-size: 18px;
     width: 200px;
     text-align: center;
+    border-radius: 5px;
   }
   
   .genero-btn:hover {
