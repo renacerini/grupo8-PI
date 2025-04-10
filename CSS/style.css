@@ -498,3 +498,118 @@ h1 {
 .genero-btn:hover {
     background-color: rgba(255, 2, 2, 0.514);
 }
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(37, 37, 37);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    color: white;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+}
+
+header {
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: rgb(165, 3, 3);
+}
+
+main {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.pelicula {
+    background-color: rgba(133, 133, 133, 0.351);
+    border-radius: 15px;
+    width: 260px;
+    padding: 10px;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.pelicula:hover {
+    background-color: rgba(255, 2, 2, 0.514);
+    border: 1px solid white;
+}
+
+.pelicula img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.pelicula h3 {
+    font-size: 24px;
+    margin: 10px 0 5px 0;
+}
+
+.pelicula p {
+    font-size: 16px;
+}
+
+footer {
+    background-color: rgb(31, 31, 31);
+    color: rgba(69, 69, 69, 0.422);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .pelicula {
+        width: 90%;
+    }
+}
+
