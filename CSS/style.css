@@ -483,8 +483,10 @@ h1 {
 .genero-buttons {
     display: flex;
     flex-direction: column;
-    gap: 15px;
     align-items: center;
+    padding-bottom: 15px;
+   
+  
 }
 
 .genero-btn {
@@ -495,7 +497,7 @@ h1 {
     font-size: 18px;
     width: 200px;
     text-align: center;
-    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
 .genero-btn:hover {
