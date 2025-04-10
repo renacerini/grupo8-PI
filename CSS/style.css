@@ -322,7 +322,7 @@ font-weight: bolder;
 
 .maindetalle {
     display: flex;
-    align-items: flex-start;
+    
     
 }
 
@@ -343,7 +343,7 @@ font-weight: bolder;
 
 .estrellas {
     margin: 30px 0px;
-    padding: 5px;
+ 
 }
 
 .estrellas img {
@@ -352,12 +352,8 @@ font-weight: bolder;
 
 .fotodetalle{
     width: 700px;
-    
-    object-fit: cover;
     border-radius: 0;
     display: block;
-    margin: 0px;
-    padding: 0px;
 }
 
 .genero a{
