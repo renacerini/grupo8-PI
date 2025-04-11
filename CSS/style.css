@@ -501,3 +501,50 @@ h1 {
 .genero-btn:hover {
     background-color: rgba(255, 2, 2, 0.514);
 }
+
+/* CSS de resultados: search_result */
+
+.resultados_peliculas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .resultados_peliculas article {
+    background-color: rgba(133, 133, 133, 0.15);
+    border-radius: 10px;
+    padding: 10px;
+    width: 220px;
+    text-align: center;
+    transition: 0.3s ease;
+  }
+  
+  .resultados_peliculas article:hover {
+    background-color: rgba(255, 2, 2, 0.514);
+    border: 1px solid white;
+  }
+  
+  .resultados_peliculas img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .resultados_peliculas h3 {
+    color: white;
+    font-size: 18px;
+    margin: 10px 0 5px;
+  }
+  
+  .resultados_peliculas p {
+    color: white;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .h1_search {
+    color: white;
+    font-size: 30px;
+    padding: 15px 30px;
+}
