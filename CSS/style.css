@@ -136,16 +136,18 @@ header li {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 .elemento {
     border-radius: 15px;
-    padding: 5px;
+    padding: 5px ;
+    box-sizing: border-box;
     background-color: rgba(133, 133, 133, 0.351);
     text-decoration: none;
     width: 260px;
+    margin: 15px;
 }
 
 .elemento:hover {
@@ -154,7 +156,7 @@ header li {
 }
 
 .elemento img {
-    width: 250px;
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -213,12 +215,20 @@ a {
 
 /* CSS del register y login */
 
+.contenedor-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
 .seccionreg {
     background: white;
     padding: 60px;
     width: 320px;
     margin: 35px 0 40px 0;
     border-radius: 5px;
+    
 }
 
 .seccionreg h1 {
@@ -561,3 +571,10 @@ font-size: 58px;
 }
 
 /* CSS DETALLE GENERO  */
+
+.contenedor-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
