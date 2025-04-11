@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -92,7 +91,7 @@ header li {
 }
 
 .nombres p {
-    margin: 30px;
+    margin: 30px 30px 30px 30px;
 }
 
 .contacto {
@@ -105,13 +104,13 @@ header li {
 }
 
 .contacto p {
-    margin: 0px 30px 10px 5px;
+    margin: 0 30px 10px 5px;
 }
 
 .contacto a {
     text-decoration: none;
     color: white;
-    margin: 0px 30px 0px 0px;
+    margin: 0 30px 0 0;
 }
 
 .contacto a:hover {
@@ -139,7 +138,6 @@ header li {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin: 0px;
 }
 
 .elemento {
@@ -201,17 +199,16 @@ a {
 }
 
 .series {
-    margin: 100px 0px 0px 0px;
+    margin: 100px 0 0 0;
 }
 
 .seriesDestacadas {
-    margin: 100px 0px 0px 0px;
-    margin-bottom: 10px;
+    margin: 100px 0 10px 0;
 }
 
 
 .peliculas {
-    margin-top: 10px;
+    margin: 10px 0 0 0;
 }
 
 /* CSS del register y login */
@@ -220,27 +217,23 @@ a {
     background: white;
     padding: 60px;
     width: 320px;
-    margin: auto;
-    margin-top: 35px;
-    margin-bottom: 40px;
+    margin: 35px 0 40px 0;
     border-radius: 5px;
 }
 
 .seccionreg h1 {
-    margin: 10px 0px;
+    margin: 10px 0 10px 0;
 }
 
 .seccionlog h1 {
-    margin: 10px 0px;
+    margin: 10px 0 10px 0;
 }
 
 .seccionlog {
     background: white;
     padding: 60px;
     width: 320px;
-    margin: auto;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin: 150px 0 150px 0;
     border-radius: 5px;
 }
 
@@ -250,7 +243,7 @@ h1 {
 
 .form {
     display: block;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
     text-align: left;
 }
 
@@ -260,7 +253,7 @@ h1 {
     font-size: 16px;
     display: block;
     width: 100%;
-    margin-top: 5px;
+    margin: 5px 0 0 0;
     border-radius: 3px;
 }
 
@@ -271,7 +264,7 @@ h1 {
     padding: 10px;
     font-size: 16px;
     width: 100%;
-    margin-bottom: 5px;
+    margin: 0 0 5px 0;
     border-radius: 5px;
 }
 
@@ -289,7 +282,7 @@ h1 {
 }
 
 .yatengocuenta {
-    margin-top: 10px;
+    margin: 10px 0 0 0;
 }
 
 .yatengocuenta:hover {
@@ -302,7 +295,7 @@ h1 {
 }
 
 .notengocuenta {
-    margin-top: 10px;
+    margin: 10px 0 0 0;
 }
 
 .notengocuenta:hover {
@@ -328,7 +321,7 @@ h1 {
 
 .detalle h2 {
     font-size: 38px;
-    margin: 30px 0px;
+    margin: 30px 0 30px 0;
 }
 
 .detalle p {
@@ -336,7 +329,7 @@ h1 {
 }
 
 .estrellas {
-    margin: 30px 0px;
+    margin: 30px 0 30px 0;
 
 }
 
@@ -356,7 +349,7 @@ h1 {
 .detalle iframe {
     border-radius: 10px;
     width: 700px;
-    margin: 70px 0px;
+    margin: 70px 0 70px 0;
 }
 
 .fotodetalle {
@@ -382,7 +375,7 @@ h1 {
     }
 
     .buscador {
-        margin-top: 10px;
+        margin: 10px 0 0 0;
     }
 
     .elementos {
@@ -401,7 +394,7 @@ h1 {
     .linea {
         width: 100%;
         height: 1px;
-        margin: 20px 0;
+        margin: 20px 0 20px 0;
     }
 
     .maindetalle {
@@ -433,7 +426,7 @@ h1 {
     }
 
     .buscador {
-        margin-top: 10px;
+        margin: 10px 0 0 0;
     }
 
     #footer {
@@ -444,7 +437,7 @@ h1 {
     .linea {
         width: 100%;
         height: 1px;
-        margin: 20px 0;
+        margin: 20px 0 20px 0;
     }
 
     .maindetalle {
@@ -471,7 +464,7 @@ h1 {
 }
 
 .genero-title {
-    margin-bottom: 40px;
+    margin: 0 0 40px 0;
     color: #fcfcfc;
     font-size: 32px;
 }
@@ -480,7 +473,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 15px;
+    padding: 0 0 15px 0;
 }
 
 .genero-btn {
@@ -491,7 +484,7 @@ h1 {
     font-size: 18px;
     width: 200px;
     text-align: center;
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
     border-radius: 5px;
 }
 
@@ -502,17 +495,17 @@ h1 {
 
 .busqueda{
     color: white;
-    margin: 20px 10px;
+    margin: 20px 10px 20px 10px;
 }
 
 .resultados {
-    margin: 20px 20px 0 0 0;
+    margin: 20px 20px 0 0;
 }
 
 .resultadoitem {
     display: flex;
     align-items: center;
-    margin-bottom: 16px;
+    margin: 0 0 16px 0;
     background-color: #51515151;
     padding: 12px;
     border-radius: 8px;
@@ -524,7 +517,7 @@ h1 {
 }
 
 .resultadolink p{
-    margin: 10px;
+    margin: 10px 10px 10px 10px;
 }
 
 .resultadoinfo h2{
@@ -533,7 +526,7 @@ font-size: 58px;
 
 .resultadoimg {
     width:150px;
-    margin: 0px 15px;
+    margin: 0 15px 0 15px;
     border-radius: 4px;
 }
 
@@ -557,14 +550,14 @@ font-size: 58px;
     display: flex;
     color: red;
     font-weight: bold;
-    margin: 20px 0px;
+    margin: 20px 0 20px 0;
     font-size: 26px;
     display: none;
 }
 
 .sinresultados img {
  width: 30px;
- margin: 0px 10px;
+ margin: 0 10px 0 10px;
 }
 
 /* CSS DETALLE GENERO  */
