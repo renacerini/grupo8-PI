@@ -142,11 +142,12 @@ header li {
 
 .elemento {
     border-radius: 15px;
-    padding: 5px ;
+    padding: 5px;
     box-sizing: border-box;
     background-color: rgba(133, 133, 133, 0.351);
     text-decoration: none;
     width: 16%;
+    /* width: 230px; */
     margin: 15px;
 }
 
@@ -256,27 +257,27 @@ h1 {
     display: block;
     margin: 0 0 10px 0;
     text-align: left;
- 
+
 }
 
 
-  .form-terminos {
+.form-terminos {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 15px;
     padding: 5px 0;
-  }
-  
-  .form-terminos input[type="checkbox"] {
+}
+
+.form-terminos input[type="checkbox"] {
     margin: 0;
     transform: scale(1.1);
-  }
-  
-  .form-terminos label {
+}
+
+.form-terminos label {
     font-size: 14px;
     color: #333;
-  }
+}
 
 .form input {
     padding: 5px;
@@ -388,99 +389,8 @@ h1 {
     display: block;
 }
 
-@media (max-width: 768px) {
 
-    /* para tablet */
-    .header {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .header ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header li {
-        padding: 10px 0;
-    }
-
-    .buscador {
-        margin: 10px 0 0 0;
-    }
-
-    .elementos {
-        justify-content: center;
-    }
-
-    .elemento {
-        margin: 10px;
-    }
-
-    #footer {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .linea {
-        width: 100%;
-        height: 1px;
-        margin: 20px 0 20px 0;
-    }
-
-    .maindetalle {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .fotodetalle {
-        width: 100%;
-
-    }
-}
-
-@media (max-width: 420px) {
-    /* para celular */
-
-    .header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header li {
-        padding: 10px 0;
-    }
-
-    .buscador {
-        margin: 10px 0 0 0;
-    }
-
-    #footer {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .linea {
-        width: 100%;
-        height: 1px;
-        margin: 20px 0 20px 0;
-    }
-
-    .maindetalle {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .fotodetalle {
-        width: 100%;
-
-    }
-}
 
 /* CSS GENERO PELICULA */
 
@@ -531,46 +441,46 @@ h1 {
     justify-content: center;
     gap: 20px;
     padding: 20px;
-  }
-  
-  .resultados_peliculas article {
+}
+
+.resultados_peliculas article {
     background-color: rgba(133, 133, 133, 0.15);
     border-radius: 10px;
     padding: 10px;
     width: 220px;
     text-align: center;
     transition: 0.3s ease;
-  }
-  
-  .resultados_peliculas article:hover {
+}
+
+.resultados_peliculas article:hover {
     background-color: rgba(255, 2, 2, 0.514);
     border: 1px solid white;
-  }
-  
-  .resultados_peliculas img {
+}
+
+.resultados_peliculas img {
     width: 100%;
     border-radius: 8px;
-  }
-  
-  .resultados_peliculas h3 {
+}
+
+.resultados_peliculas h3 {
     color: white;
     font-size: 18px;
     margin: 10px 0 5px;
-  }
-  
-  .resultados_peliculas p {
+}
+
+.resultados_peliculas p {
     color: white;
     font-size: 14px;
     margin: 0;
-  }
+}
 
-  .h1_search {
+.h1_search {
     color: white;
     font-size: 30px;
     padding: 15px 30px;
 }
 
-/* CSS para Detalles Generos */ 
+/* CSS para Detalles Generos */
 
 
 body {
@@ -587,14 +497,16 @@ body {
 }
 
 
-.h2_genero, .titulo_ppl {
+.h2_genero,
+.titulo_ppl {
     font-size: 28px;
     color: white;
     padding: 20px 40px;
 }
 
 
-.detalles_peliculas_genero, .peliculas_populares {
+.detalles_peliculas_genero,
+.peliculas_populares {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -628,7 +540,8 @@ body {
     margin: 10px 0 5px;
 }
 
-.estreno, .desde {
+.estreno,
+.desde {
     font-size: 14px;
     color: white;
 }
@@ -651,11 +564,12 @@ body {
 }
 
 
-.terminosycondiciones{
+.terminosycondiciones {
     display: flex;
     flex-direction: row;
 }
-.busqueda{
+
+.busqueda {
     color: white;
     margin: 20px 10px;
 }
@@ -678,16 +592,16 @@ body {
     text-decoration: none;
 }
 
-.resultadolink p{
+.resultadolink p {
     margin: 10px;
 }
 
-.resultadoinfo h2{
-font-size: 58px;
+.resultadoinfo h2 {
+    font-size: 58px;
 }
 
 .resultadoimg {
-    width:150px;
+    width: 150px;
     margin: 0px 15px;
     border-radius: 4px;
 }
@@ -697,7 +611,7 @@ font-size: 58px;
     color: white;
 }
 
-.resultadoinfo{
+.resultadoinfo {
     color: white;
 }
 
@@ -718,10 +632,64 @@ font-size: 58px;
 }
 
 .sinresultados img {
- width: 30px;
- margin: 0px 10px;
+    width: 30px;
+    margin: 0px 10px;
 }
 
 .busqueda {
     color: white;
+}
+
+
+@media (max-width: 420px) {
+    /* para celular */
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header li {
+        padding: 10px 0;
+    }
+
+    .buscador {
+        margin: 10px 0 0 0;
+    }
+
+    #footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .linea {
+        width: 100%;
+        height: 1px;
+        margin: 20px 0 20px 0;
+    }
+
+    .maindetalle {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fotodetalle {
+        width: 100%;
+
+    }
+
+    .elementos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .elemento{
+        width: 90%;
+    }
 }
