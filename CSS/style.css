@@ -259,6 +259,25 @@ h1 {
  
 }
 
+
+  .form-terminos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    padding: 5px 0;
+  }
+  
+  .form-terminos input[type="checkbox"] {
+    margin: 0;
+    transform: scale(1.1);
+  }
+  
+  .form-terminos label {
+    font-size: 14px;
+    color: #333;
+  }
+
 .form input {
     padding: 5px;
     border: 1px solid #ccc;
@@ -633,4 +652,71 @@ body {
     font-size: 30px;
     padding: 15px 30px;
     margin-top: 10px;
+}
+
+.busqueda{
+    color: white;
+    margin: 20px 10px;
+}
+
+.resultados {
+    margin: 20px 20px 0 0 0;
+}
+
+.resultadoitem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    background-color: #51515151;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.resultadolink {
+    display: flex;
+    text-decoration: none;
+}
+
+.resultadolink p{
+    margin: 10px;
+}
+
+.resultadoinfo h2{
+font-size: 58px;
+}
+
+.resultadoimg {
+    width:150px;
+    margin: 0px 15px;
+    border-radius: 4px;
+}
+
+.resultadoinfo h2 {
+    font-size: 19px;
+    color: white;
+}
+
+.resultadoinfo{
+    color: white;
+}
+
+.fecha {
+    font-size: 14px;
+    color: #eeeeee;
+}
+
+
+/*leyenda avisando al usuario para el caso de no haber datos coincidentes con el término buscado. (no se ve)*/
+.sinresultados {
+    display: flex;
+    color: red;
+    font-weight: bold;
+    margin: 20px 0px;
+    font-size: 26px;
+    display: none;
+}
+
+.sinresultados img {
+ width: 30px;
+ margin: 0px 10px;
 }

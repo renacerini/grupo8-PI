@@ -41,19 +41,68 @@
                 </ul>
 
             </div>
-            <form class="busqueda" action="./search-result.html" method="GET">
-            </form>
-        </nav>
-    </header>
+      
+            <div class="buscador">
+              <form action="./search-result.html" method="get">
+                  <input type="text" name="" placeholder="Buscar...">
+                  <button type="submit">Buscar</button>
+                  </form>
+          </div>
+          </nav>
+        </header>
 
-
- <main class="main-resultados">
-  <h1 class="h1_search">Resultados de búsqueda</h1>
-  <input type="search" placeholder="Buscar película..." class="buscador" disabled>
-
-  <section class="resultados_peliculas">
+    <main>
+        <h1 class="busqueda">Resultados de búsqueda para: "Gossip Girl"</h1>
     
-</main>
+        <section class="resultados">
+    
+    
+          <article class="resultadoitem">
+            <a href="./detalleSerie.html" class="resultadolink">
+              <img src="./imagenes/gossip.png" alt="Gossip Girl" class="resultadoimg">
+              <div class="resultadoinfo">
+                <h2>Gossip Girl</h2>
+                <p class="categoria">Serie</p>
+                <p class="fecha">2007 - 2012</p>
+                <p>Serie de drama adolescente en Nueva York.</p>
+              </div>
+            </a>
+          </article>
+    
+          <article class="resultadoitem">
+            <a href="./detalleSerie.html" class="resultadolink">
+              <img src="./imagenes/modernfamilly.png" alt="modern family" class="resultadoimg">
+              <div class="resultadoinfo">
+                <h2>Modern Family</h2>
+                <p class="categoria">Serie</p>
+                <p class="fecha">2009 - 2020</p>
+                <p>Comedia familiar sobre tres familias en Los Ángeles.</p>
+              </div>
+            </a>
+          </article>
+    
+    
+          <article class="resultadoitem">
+            <a href="./detalleSerie.html" class="resultadolink">
+              <img src="./imagenes/greysanatomy.png" alt="Greys anatomy" class="resultadoimg">
+              <div class="resultadoinfo">
+                <h2>Greys Anatomy</h2>
+                <p class="categoria">Serie</p>
+                <p class="fecha">2005 - 2024</p>
+                <p>Grey’s Anatomy es una serie dramática que sigue la vida profesional y personal de un grupo de cirujanos en un hospital de Seattle.</p>
+              </div>
+            </a>
+          </article>
+    
+          <div class="sinresultados">
+            <img src="./imagenes/warning.webp" alt="sin resultados">
+            <p >No se encontraron resultados para "Gossip Girl".</p>
+          </div>
+    
+          
+    
+        </section>
+      </main>
 
     
     
@@ -89,8 +138,6 @@
 
         </div>
     </footer>
-
-    <script src="./js/busqueda.js"></script>
     
 </body>
 </html>
