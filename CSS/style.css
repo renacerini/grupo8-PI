@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -68,7 +67,7 @@ header li {
     border-radius: 5px;
 }
 
-.buscador button:hover{
+.buscador button:hover {
     background-color: rgb(165, 3, 3);
     color: white;
 }
@@ -92,7 +91,7 @@ header li {
 }
 
 .nombres p {
-    margin: 30px;
+    margin: 30px 30px 30px 30px;
 }
 
 .contacto {
@@ -105,16 +104,16 @@ header li {
 }
 
 .contacto p {
-    margin: 0px 30px 10px 5px;
+    margin: 0 30px 10px 5px;
 }
 
 .contacto a {
     text-decoration: none;
     color: white;
-    margin: 0px 30px 0px 0px;
+    margin: 0 30px 0 0;
 }
 
-.contacto a:hover{
+.contacto a:hover {
     color: rgb(197, 0, 0);
 }
 
@@ -137,17 +136,18 @@ header li {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    margin: 0px;
 }
 
 .elemento {
     border-radius: 15px;
-    padding: 5px;
+    padding: 5px ;
+    box-sizing: border-box;
     background-color: rgba(133, 133, 133, 0.351);
     text-decoration: none;
     width: 260px;
+    margin: 15px;
 }
 
 .elemento:hover {
@@ -155,14 +155,10 @@ header li {
     border: 1px solid white;
 }
 
-
-
 .elemento img {
-    width: 250px;
-    display: block;
+    width: 100%;
     border-radius: 10px;
 }
-
 
 
 .detalles {
@@ -198,57 +194,57 @@ a {
     padding: 15px 30px;
 }
 
-.seriesDestacadas h2{
+.seriesDestacadas h2 {
     color: white;
     font-size: 30px;
     padding: 15px 30px;
 }
+
 .series {
     margin: 100px 0 0 0;
 }
 
-.seriesDestacadas{
-    margin: 100px 0 0 0;
-    margin-bottom: 10px;  
+.seriesDestacadas {
+    margin: 100px 0 10px 0;
 }
 
 
-.peliculas{
-    margin-top: 10px;
+.peliculas {
+    margin: 10px 0 0 0;
 }
 
-.banner img {
-    width: 100%;
-}
+/* CSS del register y login */
 
-/* CSS del register y login */ 
+.contenedor-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
 
 .seccionreg {
     background: white;
     padding: 60px;
     width: 320px;
-    margin: auto;
-    margin-top: 35px;
-    margin-bottom: 40px;
+    margin: 35px 0 40px 0;
     border-radius: 5px;
+    
 }
 
-.seccionreg h1{
-    margin: 10px 0px;
+.seccionreg h1 {
+    margin: 10px 0 10px 0;
 }
 
-.seccionlog h1{
-    margin: 10px 0px;
+.seccionlog h1 {
+    margin: 10px 0 10px 0;
 }
 
 .seccionlog {
     background: white;
     padding: 60px;
     width: 320px;
-    margin: auto;
-    margin-top: 150px;
-    margin-bottom: 150px;
-   border-radius: 5px;
+    margin: 150px 0 150px 0;
+    border-radius: 5px;
 }
 
 h1 {
@@ -257,7 +253,7 @@ h1 {
 
 .form {
     display: block;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
     text-align: left;
 }
 
@@ -267,7 +263,7 @@ h1 {
     font-size: 16px;
     display: block;
     width: 100%;
-    margin-top: 5px;
+    margin: 5px 0 0 0;
     border-radius: 3px;
 }
 
@@ -278,11 +274,11 @@ h1 {
     padding: 10px;
     font-size: 16px;
     width: 100%;
-    margin-bottom: 5px;
-
+    margin: 0 0 5px 0;
+    border-radius: 5px;
 }
 
-.botonlog:hover{
+.botonlog:hover {
     background-color: #00356d;
 
 }
@@ -296,35 +292,31 @@ h1 {
 }
 
 .yatengocuenta {
-    margin-top: 10px;
+    margin: 10px 0 0 0;
 }
 
-.yatengocuenta:hover{
-font-weight: bolder;
+.yatengocuenta:hover {
+    font-weight: bolder;
 }
+
 .yatengocuenta a {
     color: #007bff;
     text-decoration: none;
 }
 
 .notengocuenta {
-    margin-top: 10px;
+    margin: 10px 0 0 0;
 }
 
-.notengocuenta:hover{
+.notengocuenta:hover {
     font-weight: bolder;
-    }
+}
+
 .notengocuenta a {
     color: #007bff;
     text-decoration: none;
 }
 
-
-.maindetalle {
-    display: flex;
-    align-items: flex-start;
-    
-}
 
 .detalle {
     max-width: 1000px;
@@ -332,9 +324,14 @@ font-weight: bolder;
     padding-left: 30px;
 }
 
+.maindetalle {
+    display: flex;
+}
+
+
 .detalle h2 {
     font-size: 38px;
-    margin: 30px 0px;
+    margin: 30px 0 30px 0;
 }
 
 .detalle p {
@@ -342,40 +339,36 @@ font-weight: bolder;
 }
 
 .estrellas {
-    margin: 30px 0px;
-    padding: 5px;
+    margin: 30px 0 30px 0;
+
 }
 
 .estrellas img {
     height: 30px;
 }
 
-.fotodetalle{
-    width: 700px;
-    
-    object-fit: cover;
-    border-radius: 0;
-    display: block;
-    margin: 0px;
-    padding: 0px;
-}
-
-.genero a{
+.genero a {
     text-decoration: none;
     color: white;
 }
 
-.genero a:hover{
+.genero a:hover {
     font-weight: bolder;
 }
 
-.detalle iframe{
+.detalle iframe {
     border-radius: 10px;
     width: 700px;
-    margin: 70px 0px;
+    margin: 70px 0 70px 0;
+}
+
+.fotodetalle {
+    width: 700px;
+    display: block;
 }
 
 @media (max-width: 1024px) {
+
     /* para tablet */
     .header {
         flex-direction: column;
@@ -392,7 +385,7 @@ font-weight: bolder;
     }
 
     .buscador {
-        margin-top: 10px;
+        margin: 10px 0 0 0;
     }
 
     .elementos {
@@ -411,9 +404,8 @@ font-weight: bolder;
     .linea {
         width: 100%;
         height: 1px;
-        margin: 20px 0;
+        margin: 20px 0 20px 0;
     }
-
 
     .maindetalle {
         flex-direction: column;
@@ -422,10 +414,9 @@ font-weight: bolder;
 
     .fotodetalle {
         width: 100%;
-       
+
     }
 }
-
 
 @media (max-width: 768px) {
     /* para celular */
@@ -445,7 +436,7 @@ font-weight: bolder;
     }
 
     .buscador {
-        margin-top: 10px;
+        margin: 10px 0 0 0;
     }
 
     #footer {
@@ -456,9 +447,8 @@ font-weight: bolder;
     .linea {
         width: 100%;
         height: 1px;
-        margin: 20px 0;
+        margin: 20px 0 20px 0;
     }
-
 
     .maindetalle {
         flex-direction: column;
@@ -467,38 +457,36 @@ font-weight: bolder;
 
     .fotodetalle {
         width: 100%;
-     
+
     }
 }
 
 /* CSS GENERO PELICULA */
 
 .genero-container {
-    margin: 0;
-    padding: 0;
     font-family: "Inter", sans-serif;
-    background-color:  rgb(37, 37, 37);
+    background-color: rgb(37, 37, 37);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 65vh;
     flex-direction: column;
-  }
-  
-  .genero-title {
-    margin-bottom: 40px;
+}
+
+.genero-title {
+    margin: 0 0 40px 0;
     color: #fcfcfc;
     font-size: 32px;
-  }
-  
-  .genero-buttons {
+}
+
+.genero-buttons {
     display: flex;
     flex-direction: column;
-    gap: 15px;
     align-items: center;
-  }
-  
-  .genero-btn {
+    padding: 0 0 15px 0;
+}
+
+.genero-btn {
     text-decoration: none;
     background-color: #6c757d;
     color: white;
@@ -506,10 +494,10 @@ font-weight: bolder;
     font-size: 18px;
     width: 200px;
     text-align: center;
+    margin: 0 0 15px 0;
     border-radius: 5px;
-  }
-  
-  .genero-btn:hover {
+}
+
+.genero-btn:hover {
     background-color: rgba(255, 2, 2, 0.514);
-  }
-  
+}
