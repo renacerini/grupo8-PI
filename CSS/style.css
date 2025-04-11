@@ -228,7 +228,7 @@ a {
     width: 320px;
     margin: 35px 0 40px 0;
     border-radius: 5px;
-    
+    color: black;
 }
 
 .seccionreg h1 {
@@ -245,6 +245,7 @@ a {
     width: 320px;
     margin: 150px 0 150px 0;
     border-radius: 5px;
+    color: black;
 }
 
 h1 {
