@@ -673,23 +673,61 @@ body {
         margin: 20px 0 20px 0;
     }
 
-    .maindetalle {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .fotodetalle {
-        width: 100%;
-
-    }
-
     .elementos {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .elemento{
+    .elemento {
         width: 90%;
+    }
+
+    .maindetalle {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .fotodetalle {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    .detalle {
+        font-size: 12px;
+    }
+
+    .detalle h2 {
+        font-size: 16px;
+        margin: 0 0 8px 0;
+    }
+
+    .detalle h3 {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .estrellas img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .fecha,
+    .duracion,
+    .genero,
+    .sinopsis {
+        margin: 0 0 8px 0;
+    }
+
+    .genero a {
+        display: block;
+        font-size: 12px;
+    }
+
+    .detalle iframe {
+        width: 100%;
+        height: 135px;
+        margin: 10px 0 0 0;
     }
 }
