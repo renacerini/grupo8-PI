@@ -143,11 +143,9 @@ header li {
 .elemento {
     border-radius: 15px;
     padding: 5px;
-    box-sizing: border-box;
     background-color: rgba(133, 133, 133, 0.351);
     text-decoration: none;
     width: 16%;
-    /* width: 230px; */
     margin: 15px;
 }
 
@@ -264,15 +262,11 @@ h1 {
 .form-terminos {
     display: flex;
     align-items: center;
-    gap: 10px;
     margin-bottom: 15px;
     padding: 5px 0;
 }
 
-.form-terminos input[type="checkbox"] {
-    margin: 0;
-    transform: scale(1.1);
-}
+
 
 .form-terminos label {
     font-size: 14px;
@@ -439,7 +433,6 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
     padding: 20px;
 }
 
@@ -449,7 +442,6 @@ h1 {
     padding: 10px;
     width: 220px;
     text-align: center;
-    transition: 0.3s ease;
 }
 
 .resultados_peliculas article:hover {
