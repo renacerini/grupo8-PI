@@ -54,3 +54,30 @@ fetch(`https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}`)
     `;
   }
 });
+
+
+// JAVA DE SERIES DESTACADAS (TOP RATED)
+fetch(`https://api.themoviedb.org/3/tv/top_rated?api_key=${apiKey}`)
+.then(function(respuesta) {
+  return respuesta.json();
+})
+.then(function(datos) {
+  let contenedor = document.querySelector('.seriesDestacadas .elementos');
+  contenedor.innerHTML = '';
+
+  for (let i = 0; i < 5; i++) {
+    let serie = datos.results[i];
+    contenedor.innerHTML += `
+      <div class="elemento">
+        <a href="./detalleSerie.html?id=${serie.id}">
+          <img src="${imgBaseUrl + serie.poster_path}" alt="${serie.name}">
+          <div class="detalles">
+            <h3>${serie.name}</h3>
+            <p>${serie.first_air_date}</p>
+          </div>
+        </a>
+      </div>
+    `;
+    
+  }
+})
