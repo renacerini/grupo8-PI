@@ -1,21 +1,25 @@
+
 const apiKey = 'ffb64d9c399d8207818303ad9c5d6ee3';
 const imgBaseUrl = 'https://image.tmdb.org/t/p/w500';
 
+// Obtener el ID de la película desde la URL
 const queryString = location.search;
 const queryStringObj = new URLSearchParams(queryString);
 const id = queryStringObj.get("id");
 
+// Seleccionar contenedor principal
 const main = document.querySelector(".maindetalle");
 
+// Fetch a la API
 fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
-.then(response => response.json)
-. then(data => {
+  .then(response => response.json())
+  .then(data => {
     main.innerHTML = `
-    <section>
-        <img src="${imgBaseUrl + data.poster_path}" alt="${data.title}" class="fotodetalle">
-    </section>
+      <section>
+          <img src="${imgBaseUrl + data.poster_path}" alt="${data.title}" class="fotodetalle">
+      </section>
 
-    <section class="detalle">
+      <section class="detalle">
           <h2>${data.title}</h2>
 
           <h3>Rating: ${data.vote_average}</h3>
@@ -31,7 +35,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
           <p class="sinopsis">${data.overview}</p>
       </section>
     `;
-})
-.catch(error => {
-  console.error('Error al obtener detalles de la película:', error);
-});
+  })
+  .catch(error => {
+    console.error('Error al obtener detalles de la película:', error);
+  });
