@@ -4,11 +4,18 @@ const imgBaseUrl = 'https://image.tmdb.org/t/p/w500';
 
 const query = location.search;
 const queryObj = new URLSearchParams(query);
-const genreId = queryObj.get('id');
+const generoId = queryObj.get('id');
 const type = queryObj.get('type'); 
+const generoNombre = queryObj.get('name'); 
+
+const titulo = document.querySelector(".titulo-genero");
+
+if (titulo && generoNombre) {
+    titulo.innerText = generoNombre.toUpperCase();
+  }
 
 
-const url = `https://api.themoviedb.org/3/discover/${type}?api_key=${apiKey}&with_genres=${genreId}&language=es`;
+const url = `https://api.themoviedb.org/3/discover/${type}?api_key=${apiKey}&with_genres=${generoId}&language=es`;
 
 
 const contenedor = document.querySelector(".elementos");
