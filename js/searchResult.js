@@ -4,7 +4,7 @@ var apiKey = 'ffb64d9c399d8207818303ad9c5d6ee3';
 var imgBase = 'https://image.tmdb.org/t/p/w500';
 
 var qs = new URLSearchParams(location.search);
-var termino = qs.get('q');
+var termino = qs.get('query');
 var tipo = qs.get('tipo');
 
 var titulo = document.querySelector('.busqueda');
