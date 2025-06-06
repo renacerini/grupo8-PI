@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,14 +23,14 @@
                 </li>
 
                 <li>
-                <a href="./generoPelicula.html">Generos de peliculas</a>
+                    <a href="./generoPelicula.html">Generos de peliculas</a>
                 </li>
 
                 <li>
                     <a href="./generoSerie.html">Generos de series</a>
                 </li>
 
-           
+
 
                 <li>
                     <a href="./login.html">login</a>
@@ -38,7 +39,7 @@
                 <li>
                     <a href="./register.html">Register</a>
                 </li>
-                
+
 
             </ul>
 
@@ -47,24 +48,27 @@
         <div class="buscador">
             <form action="./search-result.html" method="get">
                 <input type="text" name="query" placeholder="Buscar...">
+                <label><input type="radio" name="tipo" value="movie" checked> Películas</label>
+                <label><input type="radio" name="tipo" value="tv"> Series</label>
                 <button type="submit">Buscar</button>
-                </form>
+            </form>
         </div>
     </nav>
 </header>
 
 <body>
     <div class="genero-container">
-      <h1 class="genero-title">Seleccioná un Género</h1>
-      <div class="genero-buttons">
-        <a href="./detalleGenero.html?id=10759&type=tv&name=AcciónyAventura" class="genero-btn">Acción y Aventura</a>
-        <a href="./detalleGenero.html?id=35&type=tv&name=Comedia" class="genero-btn">Comedia</a>
-        <a href="./detalleGenero.html?id=18&type=tv&name=Drama" class="genero-btn">Drama</a>
-        <a href="./detalleGenero.html?id=10765&type=tv&name=CienciaFicción" class="genero-btn">Ciencia Ficción</a>
-        <a href="./detalleGenero.html?id=10762&type=tv&name=Niños" class="genero-btn">Niños</a>
-      </div>
+        <h1 class="genero-title">Seleccioná un Género</h1>
+        <div class="genero-buttons">
+            <a href="./detalleGenero.html?id=10759&type=tv&name=AcciónyAventura" class="genero-btn">Acción y
+                Aventura</a>
+            <a href="./detalleGenero.html?id=35&type=tv&name=Comedia" class="genero-btn">Comedia</a>
+            <a href="./detalleGenero.html?id=18&type=tv&name=Drama" class="genero-btn">Drama</a>
+            <a href="./detalleGenero.html?id=10765&type=tv&name=CienciaFicción" class="genero-btn">Ciencia Ficción</a>
+            <a href="./detalleGenero.html?id=10762&type=tv&name=Niños" class="genero-btn">Niños</a>
+        </div>
     </div>
-  </body>
+</body>
 
 
 
@@ -102,9 +106,6 @@
 
     </div>
 </footer>
-<body>
-    
-</body>
 <script src="./js/generoSerie.js"></script>
 
 </html>

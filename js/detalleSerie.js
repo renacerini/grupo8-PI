@@ -12,14 +12,14 @@ let url = `https://api.themoviedb.org/3/tv/${idSerie}?api_key=${apiKey}&language
 
 
 fetch(url)
-  .then(function(respuesta) {
+  .then(function (respuesta) {
     return respuesta.json();
   })
-  .then(function(data) {
-    
+  .then(function (data) {
+
     let contenedor = document.querySelector(".maindetalle");
 
-  
+
     contenedor.innerHTML = `
       <section>
         <img src="${imgBaseUrl + data.poster_path}" alt="${data.name}" class="fotodetalle">
@@ -49,6 +49,6 @@ fetch(url)
       </section>
     `;
   })
-  .catch(function(error) {
+  .catch(function (error) {
     console.error("Error al obtener detalles de la serie:", error);
   });
