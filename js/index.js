@@ -4,16 +4,16 @@ const imgBaseUrl = 'https://image.tmdb.org/t/p/w500';
 
 // JAVA DE PELICULAS POPULARES 
 fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
-.then (function(respuesta) {
+  .then(function (respuesta) {
     return respuesta.json();
-})
-.then(function(datos){
+  })
+  .then(function (datos) {
     let contenedor = document.querySelector('.peliculas .elementos');
     contenedor.innerHTML = "";
 
     for (let i = 0; i < 5; i++) {
-        let pelicula = datos.results[i];
-        contenedor.innerHTML += `
+      let pelicula = datos.results[i];
+      contenedor.innerHTML += `
             <div class="elemento"> 
             <a href="./detallePelicula.html?id=${pelicula.id}">
             <img src="${imgBaseUrl + pelicula.poster_path}" alt="${pelicula.title}">
@@ -26,22 +26,22 @@ fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
       `;
     }
 
-}
+  }
 
-);
+  );
 
 // JAVA DE SERIES POPULARES 
 fetch(`https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}`)
-.then (function(respuesta) {
-  return respuesta.json();
-})
-.then(function(datos){
-  let contenedor = document.querySelector('.series .elementos');
-  contenedor.innerHTML = "";
-  
-  for (let i = 0; i < 5; i++) {
-    let serie = datos.results[i];
-    contenedor.innerHTML += `
+  .then(function (respuesta) {
+    return respuesta.json();
+  })
+  .then(function (datos) {
+    let contenedor = document.querySelector('.series .elementos');
+    contenedor.innerHTML = "";
+
+    for (let i = 0; i < 5; i++) {
+      let serie = datos.results[i];
+      contenedor.innerHTML += `
       <div class="elemento">
         <a href="./detalleSerie.html?id=${serie.id}">
           <img src="${imgBaseUrl + serie.poster_path}" alt="${serie.name}">
@@ -52,22 +52,22 @@ fetch(`https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}`)
         </a>
       </div>
     `;
-  }
-});
+    }
+  });
 
 
 // JAVA DE SERIES DESTACADAS (TOP RATED)
 fetch(`https://api.themoviedb.org/3/tv/top_rated?api_key=${apiKey}`)
-.then(function(respuesta) {
-  return respuesta.json();
-})
-.then(function(datos) {
-  let contenedor = document.querySelector('.seriesDestacadas .elementos');
-  contenedor.innerHTML = '';
+  .then(function (respuesta) {
+    return respuesta.json();
+  })
+  .then(function (datos) {
+    let contenedor = document.querySelector('.seriesDestacadas .elementos');
+    contenedor.innerHTML = '';
 
-  for (let i = 0; i < 5; i++) {
-    let serie = datos.results[i];
-    contenedor.innerHTML += `
+    for (let i = 0; i < 5; i++) {
+      let serie = datos.results[i];
+      contenedor.innerHTML += `
       <div class="elemento">
         <a href="./detalleSerie.html?id=${serie.id}">
           <img src="${imgBaseUrl + serie.poster_path}" alt="${serie.name}">
@@ -78,6 +78,6 @@ fetch(`https://api.themoviedb.org/3/tv/top_rated?api_key=${apiKey}`)
         </a>
       </div>
     `;
-    
-  }
-})
+
+    }
+  })
