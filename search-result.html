@@ -45,8 +45,8 @@
             </div>
 
             <div class="buscador">
-                <form action="./search-result.html" method="get">
-                    <input type="text" name="query" placeholder="Buscar...">
+                <form action="./search-result.html" method="get"  id="form">
+                    <input type="text" name="query" placeholder="Buscar..." id="validar">
                     <label><input type="radio" name="tipo" value="movie" checked> Películas</label>
                     <label><input type="radio" name="tipo" value="tv"> Series</label>
                     <button type="submit">Buscar</button>
@@ -56,7 +56,7 @@
     </header>
 
     <main>
-        <div class="spinner">
+        <div class="cargando">
             <img src="./imagenes/cargando.gif" alt="Cargando...">
         </div>
         <h1 class="busqueda"></h1>
@@ -100,5 +100,5 @@
 
 </body>
 <script src="./js/searchResult.js"></script>
-
+<script src="./js/validacionSearch.js"></script>
 </html>

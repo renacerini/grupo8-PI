@@ -7,7 +7,7 @@ var tipo = qs.get('tipo');
 
 var titulo = document.querySelector('.busqueda');
 var cont = document.querySelector('.resultados');
-var spinner = document.querySelector('.spinner');
+var cargando = document.querySelector('.cargando');
 
 titulo.innerText = 'Resultados de búsqueda para: "' + termino + '"';
 
@@ -21,14 +21,14 @@ function buscar(texto, tipoBusqueda) {
   var textoSeguro = texto.split(' ').join('%20');
   var url = 'https://api.themoviedb.org/3/search/' + tipoBusqueda + '?api_key=' + apiKey + '&query=' + textoSeguro;
 
-  spinner.style.display = 'flex';
+  cargando.style.display = 'flex';
 
   fetch(url)
     .then(function (respuesta) {
       return respuesta.json();
     })
     .then(function (data) {
-      spinner.style.display = 'none';
+      cargando.style.display = 'none';
       cont.innerHTML = '';
 
       if (data.results.length === 0) {
@@ -89,7 +89,7 @@ function buscar(texto, tipoBusqueda) {
       }
     })
     .catch(function () {
-      spinner.style.display = 'none';
+      cargando.style.display = 'none';
       cont.innerHTML = '<div class="sinresultados"><img src="./imagenes/warning.webp" alt="sin resultados"><p>Ocurrió un error al buscar. Intentalo de nuevo.</p></div>';
     });
 }
