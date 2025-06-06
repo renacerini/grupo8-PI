@@ -1,16 +1,16 @@
 const apiKey = 'ffb64d9c399d8207818303ad9c5d6ee3';
 const imgBaseUrl = 'https://image.tmdb.org/t/p/w500';
 
-// Obtener datos del query string
+
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let idGenero = queryStringObj.get('id');
 let tipo = queryStringObj.get('tipo');
 
-// Construir URL para buscar el nombre del género
+
 let urlGeneros = `https://api.themoviedb.org/3/genre/${tipo}/list?api_key=${apiKey}&language=es`;
 
-// Buscar el nombre del género (por id)
+
 fetch(urlGeneros)
   .then(function (respuesta) {
     return respuesta.json();
@@ -26,11 +26,11 @@ fetch(urlGeneros)
       }
     }
 
-    // Mostrar el nombre del género en el título
+
     let titulo = document.querySelector('.titulo_generos');
     titulo.innerText = `Resultados para género: ${nombreGenero}`;
 
-    // Luego hago el fetch de películas o series del género
+  
     let urlContenido = `https://api.themoviedb.org/3/discover/${tipo}?api_key=${apiKey}&with_genres=${idGenero}&language=es`;
 
     fetch(urlContenido)
