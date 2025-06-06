@@ -386,7 +386,8 @@ h1 {
 
 
 
-/* CSS GENERO PELICULA */
+/* CSS GENERO PELICULA Y SERIE */
+
 
 .genero-container {
     font-family: "Inter", sans-serif;
@@ -394,22 +395,29 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 65vh;
+    min-height: 100vh; 
     flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 50px;
 }
+
 
 .genero-title {
-    margin: 0 0 40px 0;
+    margin-bottom: 40px;
     color: #fcfcfc;
-    font-size: 32px;
+    font-size: 36px;
+    font-weight: bold;
 }
 
+
 .genero-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 0 15px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 80%;
+    max-width: 800px;
 }
+
 
 .genero-btn {
     text-decoration: none;
@@ -417,15 +425,20 @@ h1 {
     color: white;
     padding: 12px 25px;
     font-size: 18px;
-    width: 200px;
+    border-radius: 8px;
     text-align: center;
-    margin: 0 0 15px 0;
-    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
+
 .genero-btn:hover {
-    background-color: rgba(255, 2, 2, 0.514);
+    background-color: rgba(255, 2, 2, 0.7);
 }
+
+
+
+
+
 
 /* CSS de resultados: search_result */
 
@@ -474,44 +487,40 @@ h1 {
 
 /* CSS para Detalles Generos */
 
-
-body {
-    background-color: rgb(37, 37, 37);
-    font-family: "Inter", sans-serif;
-    color: white;
-}
-
-
-.titulo_generos {
-    font-size: 36px;
-    color: white;
-    padding: 10px;
-}
-
-
-.h2_genero,
-.titulo_ppl {
-    font-size: 28px;
-    color: white;
-    padding: 20px 40px;
-}
-
-
 .detalles_peliculas_genero,
 .peliculas_populares {
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto; */
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-
 .pelicula {
-    background-color: rgba(133, 133, 133, 0.15);
+   /* background-color: rgba(133, 133, 133, 0.15);
     border-radius: 10px;
-    padding: 10px;
+    padding: 12px;
     width: 200px;
+    margin: 15px; 
     text-align: center;
+    border: 1px solid transparent;*/
+    border-radius: 15px;
+    padding: 5px;
+    background-color: rgba(133, 133, 133, 0.351);
+    text-decoration: none;
+    width: 16%;
+    margin: 15px;
+
+
+
+
 }
 
 .pelicula:hover {
@@ -519,97 +528,32 @@ body {
     border: 1px solid white;
 }
 
-
 .imagenPP {
     width: 100%;
     border-radius: 8px;
+    margin-bottom: 10px;
 }
-
 
 .titulo {
-    font-size: 18px;
+    font-size: 17px;
+    font-weight: bold;
     color: white;
     margin: 10px 0 5px;
+    text-align: center;
 }
 
-.estreno,
-.desde {
-    font-size: 14px;
-    color: white;
-}
-
-
-.hipervinculo {
-    text-decoration: none;
-    color: white;
-}
-
-.hipervinculo:hover {
-    font-weight: bold;
-}
-
-.generosHome h2 {
-    color: white;
-    font-size: 30px;
-    padding: 15px 30px;
-    margin-top: 10px;
-}
-
-
-.terminosycondiciones {
-    display: flex;
-    flex-direction: row;
-}
-
-.busqueda {
-    color: white;
-    margin: 20px 10px;
-}
-
-.resultados {
-    margin: 20px 20px 0 0 0;
-}
-
-.resultadoitem {
-    display: flex;
-    align-items: center;
-    margin-bottom: 16px;
-    background-color: #51515151;
-    padding: 12px;
-    border-radius: 8px;
-}
-
-.resultadolink {
-    display: flex;
-    text-decoration: none;
-}
-
-.resultadolink p {
-    margin: 10px;
-}
-
-.resultadoinfo h2 {
-    font-size: 58px;
-}
-
-.resultadoimg {
-    width: 150px;
-    margin: 0px 15px;
-    border-radius: 4px;
-}
-
-.resultadoinfo h2 {
-    font-size: 19px;
-    color: white;
-}
-
-.resultadoinfo {
-    color: white;
-}
-
-.fecha {
-    font-size: 14px;
+.estreno {
+    font-size: 15px;
     color: #eeeeee;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.titulo_generos {
+    font-size: 36px;
+    color: white;
+    padding: 20px 0 10px;
+    text-align: center;
 }
 
 
