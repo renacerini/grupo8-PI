@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>result</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header>
         <nav class="header">
@@ -22,7 +24,7 @@
                     </li>
 
                     <li>
-                    <a href="./generoPelicula.html">Generos de peliculas</a>
+                        <a href="./generoPelicula.html">Generos de peliculas</a>
                     </li>
 
                     <li>
@@ -36,33 +38,33 @@
                     <li>
                         <a href="./register.html">Register</a>
                     </li>
-                    
+
 
                 </ul>
 
             </div>
-      
+
             <div class="buscador">
                 <form action="./search-result.html" method="get">
-                  <input type="text" name="query" placeholder="Buscar...">
-                  <label><input type="radio" name="tipo" value="movie" checked> Películas</label>
-                  <label><input type="radio" name="tipo" value="tv"> Series</label>
-                  <button type="submit">Buscar</button>
+                    <input type="text" name="query" placeholder="Buscar...">
+                    <label><input type="radio" name="tipo" value="movie" checked> Películas</label>
+                    <label><input type="radio" name="tipo" value="tv"> Series</label>
+                    <button type="submit">Buscar</button>
                 </form>
             </div>
-          </nav>
-        </header>
+        </nav>
+    </header>
 
     <main>
-      <div class="spinner">
-        <img src="./imagenes/cargando.gif" alt="Cargando...">
-      </div>
-      <h1 class="busqueda"></h1>
-      <section class="resultados"></section>
+        <div class="spinner">
+            <img src="./imagenes/cargando.gif" alt="Cargando...">
+        </div>
+        <h1 class="busqueda"></h1>
+        <section class="resultados"></section>
     </main>
 
-    
-    
+
+
 
     <footer id="footer">
         <div class="nombres">
@@ -95,7 +97,8 @@
 
         </div>
     </footer>
-    
+
 </body>
 <script src="./js/searchResult.js"></script>
+
 </html>

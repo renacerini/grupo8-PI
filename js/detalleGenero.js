@@ -30,7 +30,7 @@ fetch(urlGeneros)
     let titulo = document.querySelector('.titulo_generos');
     titulo.innerText = `Resultados para género: ${nombreGenero}`;
 
-  
+
     let urlContenido = `https://api.themoviedb.org/3/discover/${tipo}?api_key=${apiKey}&with_genres=${idGenero}&language=es`;
 
     fetch(urlContenido)

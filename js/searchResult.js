@@ -74,14 +74,14 @@ function buscar(texto, tipoBusqueda) {
 
           cont.innerHTML +=
             '<article class="resultadoitem">' +
-              '<a class="resultadolink" href="' + destino + '">' +
-                '<img class="resultadoimg" src="' + poster + '" alt="' + nombre + '">' +
-                '<div class="resultadoinfo">' +
-                  '<h2>' + nombre + '</h2>' +
-                  '<p class="categoria">' + (tipoBusqueda === 'movie' ? 'Película' : 'Serie') + '</p>' +
-                  '<p class="fecha">' + (fecha ? fecha : '') + '</p>' +
-                '</div>' +
-              '</a>' +
+            '<a class="resultadolink" href="' + destino + '">' +
+            '<img class="resultadoimg" src="' + poster + '" alt="' + nombre + '">' +
+            '<div class="resultadoinfo">' +
+            '<h2>' + nombre + '</h2>' +
+            '<p class="categoria">' + (tipoBusqueda === 'movie' ? 'Película' : 'Serie') + '</p>' +
+            '<p class="fecha">' + (fecha ? fecha : '') + '</p>' +
+            '</div>' +
+            '</a>' +
             '</article>';
 
           i = i + 1;
