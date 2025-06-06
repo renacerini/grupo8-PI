@@ -171,9 +171,9 @@ a {
 }
 
 .detalles h3 {
-    font-size: 25px;
+   font-size: 25px;
     padding: 3px;
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 .detalles p {
