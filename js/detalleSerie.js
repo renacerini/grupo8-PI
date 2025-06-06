@@ -37,9 +37,13 @@ fetch(url)
 
         <p class="duracion">▷ ${data.number_of_seasons} temporadas</p>
 
+        
         <p class="genero">
-          ${data.genres.map(genero => `<a href="./detalleGenero.html">${genero.name}</a>`).join(', ')}
-        </p>
+  ${data.genres.map(genero => `<a href="./detalleGenero.html?id=${genero.id}&tipo=tv">${genero.name}</a>`).join(', ')}
+</p>
+
+        
+    
 
         <p class="sinopsis">${data.overview}</p>
       </section>

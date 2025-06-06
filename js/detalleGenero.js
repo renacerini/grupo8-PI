@@ -2,57 +2,64 @@ const apiKey = 'ffb64d9c399d8207818303ad9c5d6ee3';
 const imgBaseUrl = 'https://image.tmdb.org/t/p/w500';
 
 
-const query = location.search;
-const queryObj = new URLSearchParams(query);
-const generoId = queryObj.get('id');
-const type = queryObj.get('type'); 
-const generoNombre = queryObj.get('name'); 
-
-const titulo = document.querySelector(".titulo-genero");
-
-if (titulo && generoNombre) {
-    titulo.innerText = generoNombre.toUpperCase();
-  }
+let queryString = location.search;
+let queryStringObj = new URLSearchParams(queryString);
+let idGenero = queryStringObj.get('id');
+let tipo = queryStringObj.get('tipo');
 
 
-const url = `https://api.themoviedb.org/3/discover/${type}?api_key=${apiKey}&with_genres=${generoId}&language=es`;
+let urlGeneros = `https://api.themoviedb.org/3/genre/${tipo}/list?api_key=${apiKey}&language=es`;
 
 
-const contenedor = document.querySelector(".elementos");
-contenedor.innerHTML = "<p>Cargando contenido...</p>";
+fetch(urlGeneros)
+  .then(function (respuesta) {
+    return respuesta.json();
+  })
+  .then(function (data) {
+    let generos = data.genres;
+    let nombreGenero = "Desconocido";
 
-fetch(url)
-  .then(response => response.json())
-  .then(data => {
-    contenedor.innerHTML = "";
-
-    if (data.results.length === 0) {
-      contenedor.innerHTML = "<p>No se encontraron resultados para este género.</p>";
-      return;
+    for (let i = 0; i < generos.length; i++) {
+      if (generos[i].id == idGenero) {
+        nombreGenero = generos[i].name;
+        break;
+      }
     }
 
-    data.results.forEach(item => {
-      const nombre = type === "movie" ? item.title : item.name;
-      const fecha = type === "movie" ? item.release_date : item.first_air_date;
-      const id = item.id;
-      const link = type === "movie"
-        ? `./detallePelicula.html?id=${id}`
-        : `./detalleSerie.html?id=${id}`;
 
-      contenedor.innerHTML += `
-        <div class="elemento">
-          <a href="${link}">
-            <img src="${imgBaseUrl + item.poster_path}" alt="${nombre}">
-            <div class="detalles">
-              <h3>${nombre}</h3>
-              <p>${fecha}</p>
-            </div>
-          </a>
-        </div>
-      `;
-    });
+    let titulo = document.querySelector('.titulo_generos');
+    titulo.innerText = `Resultados para género: ${nombreGenero}`;
+
+  
+    let urlContenido = `https://api.themoviedb.org/3/discover/${tipo}?api_key=${apiKey}&with_genres=${idGenero}&language=es`;
+
+    fetch(urlContenido)
+      .then(function (respuesta) {
+        return respuesta.json();
+      })
+      .then(function (data) {
+        let resultados = data.results;
+        let contenedor = document.querySelector('.detalles_peliculas_genero');
+        contenedor.innerHTML = "";
+
+        for (let i = 0; i < resultados.length; i++) {
+          let item = resultados[i];
+          contenedor.innerHTML += `
+            <article class="pelicula">
+              <a href="./${tipo === 'movie' ? 'detallePelicula' : 'detalleSerie'}.html?id=${item.id}" class="hipervinculo">
+                <img src="${imgBaseUrl + item.poster_path}" class="imagenPP" alt="${item.title || item.name}">
+                <p class="titulo">${item.title || item.name}</p>
+                <p class="estreno">${item.release_date || item.first_air_date}</p>
+              </a>
+            </article>
+          `;
+        }
+      })
+      .catch(function (error) {
+        console.error("Error al cargar contenido del género:", error);
+      });
+
   })
-  .catch(error => {
-    console.error("Error al obtener datos del género:", error);
-    contenedor.innerHTML = "<p>Hubo un error al cargar el contenido. Intentalo más tarde.</p>";
+  .catch(function (error) {
+    console.error("Error al obtener el nombre del género:", error);
   });

@@ -28,10 +28,18 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
 
           <p class="duracion">▷ ${data.runtime} minutos</p>
 
-          <p class="genero">
-              ${data.genres.map(genero => `<a href="./detalleGenero.html?id=${genero.id}&type=movie">${genero.name}</a>`).join(', ')}
-          </p>
+         
+         <p class="genero">
+  ${data.genres.map(genero => `<a href="./detalleGenero.html?id=${genero.id}&tipo=movie">${genero.name}</a>`).join(', ')}
+</p>
 
+         
+         
+         
+         
+         
+         
+         
           <p class="sinopsis">${data.overview}</p>
       </section>
     `;
