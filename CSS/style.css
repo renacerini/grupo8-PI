@@ -386,8 +386,7 @@ h1 {
 
 
 
-/* CSS GENERO PELICULA Y SERIE */
-
+/* CSS GENERO PELICULA */
 
 .genero-container {
     font-family: "Inter", sans-serif;
@@ -395,29 +394,22 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; 
+    height: 65vh;
     flex-direction: column;
-    padding-top: 0px;
-    padding-bottom: 50px;
 }
-
 
 .genero-title {
-    margin-bottom: 40px;
+    margin: 0 0 40px 0;
     color: #fcfcfc;
-    font-size: 36px;
-    font-weight: bold;
+    font-size: 32px;
 }
-
 
 .genero-buttons {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    width: 80%;
-    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 15px 0;
 }
-
 
 .genero-btn {
     text-decoration: none;
@@ -425,20 +417,15 @@ h1 {
     color: white;
     padding: 12px 25px;
     font-size: 18px;
-    border-radius: 8px;
+    width: 200px;
     text-align: center;
-    transition: background-color 0.3s ease;
+    margin: 0 0 15px 0;
+    border-radius: 5px;
 }
-
 
 .genero-btn:hover {
-    background-color: rgba(255, 2, 2, 0.7);
+    background-color: rgba(255, 2, 2, 0.514);
 }
-
-
-
-
-
 
 /* CSS de resultados: search_result */
 
@@ -487,29 +474,44 @@ h1 {
 
 /* CSS para Detalles Generos */
 
-.detalles_peliculas_genero,
-.peliculas_populares {
-  
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+body {
+    background-color: rgb(37, 37, 37);
+    font-family: "Inter", sans-serif;
+    color: white;
 }
 
+
+.titulo_generos {
+    font-size: 36px;
+    color: white;
+    padding: 10px;
+}
+
+
+.h2_genero,
+.titulo_ppl {
+    font-size: 28px;
+    color: white;
+    padding: 20px 40px;
+}
+
+
+.detalles_peliculas_genero,
+.peliculas_populares {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+
 .pelicula {
-   
-    border-radius: 15px;
-    padding: 5px;
-    background-color: rgba(133, 133, 133, 0.351);
-    text-decoration: none;
-    width: 16%;
-    margin: 15px;
-
-
-
-
+    background-color: rgba(133, 133, 133, 0.15);
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
 }
 
 .pelicula:hover {
@@ -517,32 +519,97 @@ h1 {
     border: 1px solid white;
 }
 
+
 .imagenPP {
     width: 100%;
     border-radius: 8px;
-    margin-bottom: 10px;
 }
+
 
 .titulo {
-    font-size: 17px;
-    font-weight: bold;
+    font-size: 18px;
     color: white;
     margin: 10px 0 5px;
-    text-align: center;
 }
 
-.estreno {
-    font-size: 15px;
-    color: #eeeeee;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-.titulo_generos {
-    font-size: 36px;
+.estreno,
+.desde {
+    font-size: 14px;
     color: white;
-    padding: 20px 0 10px;
-    text-align: center;
+}
+
+
+.hipervinculo {
+    text-decoration: none;
+    color: white;
+}
+
+.hipervinculo:hover {
+    font-weight: bold;
+}
+
+.generosHome h2 {
+    color: white;
+    font-size: 30px;
+    padding: 15px 30px;
+    margin-top: 10px;
+}
+
+
+.terminosycondiciones {
+    display: flex;
+    flex-direction: row;
+}
+
+.busqueda {
+    color: white;
+    margin: 20px 10px;
+}
+
+.resultados {
+    margin: 20px 20px 0 0 0;
+}
+
+.resultadoitem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    background-color: #51515151;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.resultadolink {
+    display: flex;
+    text-decoration: none;
+}
+
+.resultadolink p {
+    margin: 10px;
+}
+
+.resultadoinfo h2 {
+    font-size: 58px;
+}
+
+.resultadoimg {
+    width: 150px;
+    margin: 0px 15px;
+    border-radius: 4px;
+}
+
+.resultadoinfo h2 {
+    font-size: 19px;
+    color: white;
+}
+
+.resultadoinfo {
+    color: white;
+}
+
+.fecha {
+    font-size: 14px;
+    color: #eeeeee;
 }
 
 
@@ -655,16 +722,4 @@ h1 {
         height: 135px;
         margin: 10px 0 0 0;
     }
-}
-
-.spinner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60vh;
-}
-
-.spinner img {
-  width: 80px;
-  height: 80px;
 }
