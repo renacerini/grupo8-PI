@@ -13,49 +13,28 @@
     <header>
         <nav class="header">
             <div class="logo">
-                <a href="index.html" class="logo"><img src="./imagenes/logo.png" alt="logo"></a>
+                <a href="index.html" class="logo"><img src="./imagenes/logo.png" alt="logo" /></a>
             </div>
-
 
             <div class="links">
                 <ul>
-
-                    <li>
-                        <a href="./index.html">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="./generoPelicula.html">Generos de peliculas</a>
-                    </li>
-
-                    <li>
-                        <a href="./generoSerie.html">Generos de series</a>
-                    </li>
-
-
-
-                    <li>
-                        <a href="./login.html">login</a>
-
-                    </li>
-                    <li>
-                        <a href="./register.html">Register</a>
-                    </li>
-
-
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./generoPelicula.html">Géneros de películas</a></li>
+                    <li><a href="./generoSerie.html">Géneros de series</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./register.html">Register</a></li>
                 </ul>
-
             </div>
-
             <div class="buscador">
-                <form action="./search-result.html" method="get">
-                    <input type="text" name="query" placeholder="Buscar...">
+                <form action="./search-result.html" method="get"  id="form">
+                    <input type="text" name="query" placeholder="Buscar..." id="validar">
                     <label><input type="radio" name="tipo" value="movie" checked> Películas</label>
                     <label><input type="radio" name="tipo" value="tv"> Series</label>
                     <button type="submit">Buscar</button>
                 </form>
             </div>
         </nav>
+
     </header>
 
 
@@ -97,7 +76,7 @@
     </footer>
 
     <script src="./js/detallePelicula.js"></script>
-
+    <script src="./js/validacionSearch.js"></script>
 </body>
 
 </html>

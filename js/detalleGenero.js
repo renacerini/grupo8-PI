@@ -44,17 +44,32 @@ fetch(urlGeneros)
 
         for (let i = 0; i < resultados.length; i++) {
           let item = resultados[i];
+          let nombre;
+          let fecha;
+          let destino;
+          
+          if (tipo === "movie") {
+            nombre = item.title;
+            fecha = item.release_date;
+            destino = "./detallePelicula.html?id=" + item.id;
+          } else {
+            nombre = item.name;
+            fecha = item.first_air_date;
+            destino = "./detalleSerie.html?id=" + item.id;
+          }
+          
           contenedor.innerHTML += `
             <article class="pelicula">
-              <a href="./${tipo === 'movie' ? 'detallePelicula' : 'detalleSerie'}.html?id=${item.id}" class="hipervinculo">
-                <img src="${imgBaseUrl + item.poster_path}" class="imagenPP" alt="${item.title || item.name}">
-                <p class="titulo">${item.title || item.name}</p>
-                <p class="estreno">${item.release_date || item.first_air_date}</p>
+              <a href="${destino}" class="hipervinculo">
+                <img src="${imgBaseUrl + item.poster_path}" class="imagenPP" alt="${nombre}">
+                <p class="titulo">${nombre}</p>
+                <p class="estreno">${fecha}</p>
               </a>
             </article>
           `;
         }
       })
+    
       .catch(function (error) {
         console.error("Error al cargar contenido del género:", error);
       });
