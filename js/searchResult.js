@@ -44,7 +44,8 @@ function buscar(texto, tipoBusqueda) {
         sinResultados.className = 'sinresultados';
         sinResultados.style.display = 'flex';
         sinResultados.innerHTML = '<img src="./imagenes/warning.webp" alt="sin resultados"><p>No se encontraron resultados para "' + texto + '".</p>';
-        cont.appendChild(sinResultados);
+        var mensajeSinResultados = '<div class="sinresultados" style="display:flex"><img src="./imagenes/warning.webp" alt="sin resultados"><p>No se encontraron resultados para "' + texto + '".</p></div>';
+        cont.innerHTML = mensajeSinResultados;
       } else {
         var i = 0;
         while (i < data.results.length) {
