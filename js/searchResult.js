@@ -14,7 +14,13 @@ titulo.innerText = 'Resultados de búsqueda para: "' + termino + '"';
 if (termino === null || termino === '' || termino.length < 3) {
   alert('Por favor ingrese al menos 3 caracteres para buscar.');
 } else {
-  buscar(termino, tipo ? tipo : 'movie');
+  let tipoFinal;
+  if (tipo) {
+    tipoFinal = tipo;
+  } else {
+    tipoFinal = 'movie';
+  }
+  buscar(termino, tipoFinal);
 }
 
 function buscar(texto, tipoBusqueda) {
@@ -72,14 +78,28 @@ function buscar(texto, tipoBusqueda) {
             destino = './detalleSerie.html?id=' + id;
           }
 
+          let categoriaTexto;
+          if (tipoBusqueda === 'movie') {
+            categoriaTexto = 'Película';
+          } else {
+            categoriaTexto = 'Serie';
+          }
+
+          let fechaTexto;
+          if (fecha) {
+            fechaTexto = fecha;
+          } else {
+            fechaTexto = '';
+          }
+
           cont.innerHTML +=
             '<article class="resultadoitem">' +
             '<a class="resultadolink" href="' + destino + '">' +
             '<img class="resultadoimg" src="' + poster + '" alt="' + nombre + '">' +
             '<div class="resultadoinfo">' +
             '<h2>' + nombre + '</h2>' +
-            '<p class="categoria">' + (tipoBusqueda === 'movie' ? 'Película' : 'Serie') + '</p>' +
-            '<p class="fecha">' + (fecha ? fecha : '') + '</p>' +
+            '<p class="categoria">' + categoriaTexto + '</p>' +
+            '<p class="fecha">' + fechaTexto + '</p>' +
             '</div>' +
             '</a>' +
             '</article>';
